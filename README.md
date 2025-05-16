@@ -1,4 +1,5 @@
-# Traffic Light Detection using YOLOv8
+# YOLOv8-for-Small-Object-Detection-Real-World-Use-Case-on-Traffic-Lights
+
 
 This project demonstrates a custom traffic light detector trained on the **Bosch Small Traffic Lights Dataset**, using **YOLOv8n** for lightweight and fast inference.
 
@@ -31,27 +32,27 @@ Training command:
 ```bash
 yolo detect/train data=data/bosch.yaml model=yolov8n.pt epochs=50 imgsz=640
 ```
-**Validation Results**
+## Validation Results
 
 YOLOv8n achieved ~65% mAP@0.5 despite using a small and imperfect dataset.
 
-**Inference Examples**
+## Inference Examples
 
-Good Detection
-False Positive (Red mistaken for vehicle tail light)
-Low Confidence Detection (Small / Distant)
+- Good Detection
+- False Positive (Red mistaken for vehicle tail light)
+- Low Confidence Detection (Small / Distant)
 
-**Deployment-Ready**
+## Deployment-Ready
 
 Model was exported to ONNX and TensorRT for edge or real-time applications.
 
-**Future Work**
+## Future Work
 
-More samples of small & occluded lights
-Use augmentations like Mosaic or MixUp
-Try YOLOv8s or anchor-free models
-Apply Test-Time Augmentation (TTA) or confidence threshold tuning
+- More samples of small & occluded lights
+- Use augmentations like Mosaic or MixUp
+- Try YOLOv8s or anchor-free models
+- Apply Test-Time Augmentation (TTA) or confidence threshold tuning
 
-**Contributions**
+## Contributions
 
 Pull requests welcome! If you have label improvements or want to add better augmentations, feel free to contribute.
