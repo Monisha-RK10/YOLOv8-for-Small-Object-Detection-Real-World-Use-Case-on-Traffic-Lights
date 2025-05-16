@@ -30,7 +30,7 @@ Used a **clean subset** (500–800 images) from the Bosch dataset containing:
 Training command:
 ```bash
 yolo detect/train data=data/bosch.yaml model=yolov8n.pt epochs=50 imgsz=640
-
+```
 **Validation Results**
 
 YOLOv8n achieved ~65% mAP@0.5 despite using a small and imperfect dataset.
