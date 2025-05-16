@@ -52,7 +52,3 @@ Model was exported to ONNX and TensorRT for edge or real-time applications.
 - Use augmentations like Mosaic or MixUp
 - Try YOLOv8s or anchor-free models
 - Apply Test-Time Augmentation (TTA) or confidence threshold tuning
-
-## Contributions
-
-Pull requests welcome! If you have label improvements or want to add better augmentations, feel free to contribute.
